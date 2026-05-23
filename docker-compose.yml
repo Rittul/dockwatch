@@ -1,0 +1,33 @@
+services:
+
+  frontend:
+    build: ./frontend
+    ports:
+      - "5173:5173"
+    depends_on:
+      - monitoring-service
+      - logs-service
+
+  monitoring-service:
+    build: ./monitoring-service
+    ports:
+      - "5000:5000"
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+
+  logs-service:
+    build: ./logs-service
+    ports:
+      - "5001:5001"
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+
+  mongodb:
+    image: mongo
+    ports:
+      - "27017:27017"
+
+  jenkins:
+    image: jenkins/jenkins:lts
+    ports:
+      - "8080:8080"
