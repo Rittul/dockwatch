@@ -4,14 +4,6 @@ pipeline {
 
     stages {
 
-        stage('Clone Repository') {
-
-            steps {
-
-                git 'https://github.com/Rittul/dockwatch.git'
-            }
-        }
-
         stage('Build Containers') {
 
             steps {
