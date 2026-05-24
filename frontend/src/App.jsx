@@ -211,7 +211,7 @@ export default function App() {
         <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
           <i className="ti ti-brand-docker" style={{ fontSize: 22, color: '#3b82f6' }} aria-hidden="true" />
           <span style={{ fontWeight: 500, fontSize: 16 }}>DockWatch</span>
-          <span style={{ fontSize: 12, color: 'var(--color-text-tertiary)', background: 'var(--color-background-secondary)', padding: '2px 8px', borderRadius: 99, border: '0.5px solid var(--color-border-tertiary)' }}>dashboard******************</span>
+          <span style={{ fontSize: 12, color: 'var(--color-text-tertiary)', background: 'var(--color-background-secondary)', padding: '2px 8px', borderRadius: 99, border: '0.5px solid var(--color-border-tertiary)' }}>dashboard</span>
         </div>
         <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
           <span style={{ fontSize: 11, color: 'var(--color-text-tertiary)' }}>
