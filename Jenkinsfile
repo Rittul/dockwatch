@@ -1,6 +1,10 @@
 pipeline {
     agent any
 
+    environment {
+        COMPOSE_PROJECT_NAME = 'dockwatch'  // ← forces same project name as host
+    }
+
     stages {
         stage('Checkout') {
             steps {
