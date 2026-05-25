@@ -243,4 +243,4 @@ Jenkins runs from `/var/jenkins_home/workspace/dockwatch-pipeline`, so Docker Co
 
 ## License
 
-MIT
+Rittul
